@@ -58,7 +58,7 @@ $(document).ready(function () {
             $.post('/api/friends', userData, function (data) {
                
                     console.log(data);
-                    $('#matchTitle').text(data.name);
+                    $('#matchHeader').text(data.name);
                     $('#matchImage').attr('src', data.photo);
                     $('#matchModel').modal('toggle');
             })
